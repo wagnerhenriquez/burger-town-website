@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scripts/leaflet/leaflet.css" crossorigin=""/>
+    <script src="./scripts/leaflet/leaflet.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Locations | Burger Town Restaurant</title>
+</head>
+<body>
+    
+<!-- navbar -->
+
+<nav class="nav">
+    <div class="logo"><a href="../index.html"><img src="./images/logo.png" alt="burger town logo"></a></div>
+    <div class="main-menu">
+        <ul class="menu-list">
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../menu/">menu</a></li>
+            <li><a href="#">locations</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+    <div class="btn-order">order now</div>
+    <div class="burger-menu"><i class="fas fa-stream icon"></i></div>
+    <div class="mobile-menu">
+        
+        <ul class="mobile-list">
+            <li><a href="#">home</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">locations</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- locations -->
+
+<section class="locations">
+    <h1>locations</h1>
+    <div id="map"></div>
+    <div class="info">
+        <div class="address">
+            <h2 class="title">downtown ste 120</h2>
+            <p class="sub">Address</p>
+            <p>10700 Anderson Rd. #120</p>
+            <p>Houston, TX 77056</p>
+            <p class="sub">Phone number</p>
+            <p>(123) 345 - 6677</p>
+            <p class="sub">Hours of Operation</p>
+            <p>Open daily</p>
+            <p>11 am - 10 pm</p>
+            <p class="sub">Services</p>
+            <p>Take-Out</p>
+            <p>3rd-party Delivery</p>
+        </div>
+        <div class="address">
+            <h2 class="title">Pioneers Park</h2>
+            <p class="sub">Address</p>
+            <p>18105 Pioneers Bear Park</p>
+            <p>Houston, TX 77044</p>
+            <p class="sub">Phone number</p>
+            <p>(123) 345 - 6677</p>
+            <p class="sub">Hours of Operation</p>
+            <p>Open daily</p>
+            <p>11 am - 10 pm</p>
+            <p class="sub">Services</p>
+            <p>Take-Out</p>
+            <p>3rd-party Delivery</p>
+        </div>
+        <div class="address">
+            <h2 class="title">Galveston Avenue</h2>
+            <p class="sub">Address</p>
+            <p>2557 Galveston Avenue #1</p>
+            <p>Houston, TX 77450</p>
+            <p class="sub">Phone number</p>
+            <p>(123) 345 - 6677</p>
+            <p class="sub">Hours of Operation</p>
+            <p>Open daily</p>
+            <p>11 am - 10 pm</p>
+            <p class="sub">Services</p>
+            <p>Take-Out</p>
+            <p>3rd-party Delivery</p>
+        </div>
+   
+    </div>
+</section>
+
+<!-- footer -->
+
+<footer class="footer">
+    <div class="footer-text">
+        <p>Want to hook a better party with our foodtruck services?</p>
+        <button>get a free quote now</button>
+    </div>
+    <section class="section">
+        <div class="block">
+           <img src="./images/logo.png" alt="logo" class="logotype">
+           <p>10700 Anderson Rd</p>
+           <p>Street # 120</p>
+           <p>Houston, TX 77056</p>
+           <p class="subt">(123) 345 - 6677</p>
+           <p class="subt">map / directions</p>
+        </div>
+        
+        <div class="block">
+            <h2>F.A.Q</h2>
+            <p>Who we are?</p>
+            <p>Wanna join our team?</p>
+            <p>Delivery services?</p>
+            <p>Foodtruck services?</p>
+            <p>Closed on holidays?</p>
+        </div>
+        <div class="block">
+            <h2>sitemap</h2>
+            <p>Home</p>
+            <p>Our menu</p>
+            <p>Our services</p>
+            <p>About us</p>
+            <p>Contact us</p>
+        </div>
+        <div class="block">
+            <h2>want our best offers?</h2>
+            <p>We send out our best prices in a juicy weekly newsletter.</p>
+            <div class="input">
+            <input type="email" placeholder="Your E-mail" required>
+            <button class="signup">sign up</button>
+            </div>
+        </div>
+    </section>
+</footer>
+
+<script src="./scripts/app.js"></script>
+<script src="https://kit.fontawesome.com/bb499b2907.js" crossorigin="anonymous"></script>
+</body>
+</html>

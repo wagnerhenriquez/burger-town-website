@@ -1,0 +1,254 @@
+/* import font */
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Londrina+Solid:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* general settings */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fffded;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+button{
+    background: none;
+}
+/* navbar settings */
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0 0 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #44220e;
+    font-size: 1.3rem;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+.burger-menu{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.mobile-menu{
+    display: none;
+}
+.menu-list{
+    display: flex;
+    align-items: center;
+}
+.menu-list li{
+    padding: 10px;
+    transition: .5s ease;
+}
+.menu-list li:hover{
+    text-decoration: underline;
+    transition: .5s ease;
+}
+.btn-order{
+    border: 2px solid #44220e;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    transition: .4s ease;
+}
+.btn-order:hover{
+    background: #44220e;
+    color: #fff;
+}
+
+/* locations */
+
+.locations{
+    text-align: -webkit-center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.locations h1{
+    font-family: 'Londrina Solid', cursive;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+#map{
+   width: 100%;
+   height: 500px; 
+   margin-top: 70px;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.address{
+    padding-bottom: 50px;
+}
+.address p{
+ color: #8f9291;
+ padding: 3px;
+ font-size: 1.2rem;
+}
+.title{
+    color: #3d4848;
+    font-family: 'Londrina Solid', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.sub{
+    text-decoration: underline;
+}
+.sub:nth-child(5){
+    padding-top: 20px;
+}
+.sub:nth-child(7){
+    padding-top: 20px;
+}
+.sub:nth-child(10){
+    padding-top: 20px;
+}
+
+/* footer */
+
+.footer{
+    background: linear-gradient(rgb(249 133 133 / 50%), rgb(39 0 251 / 5%)),url(../../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+
+.footer-text{
+    color: #fff;
+    font-size: 2rem;
+    padding: 100px;
+    text-align: center;
+}
+.footer-text button{
+    background: #000;
+    border: none;
+    /* border-radius: 25px; */
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #b93939;
+    padding: 60px;
+}
+.block{
+
+}
+.faq{
+    
+}
+.block p{
+    padding: 3px 0;
+    color: #ffffff9e;
+}
+.block h2{
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 5px;
+}
+.logotype{
+    width: 60px;
+    height: 60px;
+}
+.subt{
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.input{
+    display: flex;
+    margin-top: 20px;
+}
+input{
+    padding: 10px;
+    
+}
+.signup{
+    background: #000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+/* medias */
+
+@media all and (max-width: 1024px){
+    .nav{
+    justify-content: space-around;
+    }
+    .img,
+    .main-menu,
+    .btn-order{
+        display: none;
+    }
+    .logo{
+        position: relative;
+        right: 30%;
+    }
+    .burger-menu{
+        display: initial;
+        position: fixed;
+        right: 110px;
+        z-index: 99998;
+    }
+    .icon{
+        transition: .5s ease;
+        position: relative;
+        z-index: 99999;
+    }
+    .mobile-menu{
+    background: darkorange;
+    display: initial;
+    font-size: 2rem;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    /* width: 250px; */
+    right: 0;
+    opacity: .9;
+    overflow: hidden;
+    text-align: center;
+    transition: .5s ease;
+    width: 0; 
+    z-index: 9999;
+    }
+    .mobile-list{
+    flex-direction: column;
+    position: relative;
+    top: 20%;
+    }
+}
