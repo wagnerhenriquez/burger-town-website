@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scripts/leaflet/leaflet.css" crossorigin=""/>
-    <script src="./scripts/leaflet/leaflet.js"></script>
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Locations | Burger Town Restaurant</title>
+    <title>Contact us | Burger Town Restaurant</title>
 </head>
 <body>
-    
-<!-- navbar -->
+
+    <!-- navbar -->
 
 <nav class="nav">
-    <div class="logo"><a href="../index.html"><img src="./images/logo.png" alt="burger town logo"></a></div>
+    <div class="logo"><a href="../index.html"><img src="../img/logo.png" alt="burger town logo"></a></div>
     <div class="main-menu">
         <ul class="menu-list">
             <li><a href="../index.html">home</a></li>
             <li><a href="../menu/">menu</a></li>
-            <li><a href="#">locations</a></li>
-            <li><a href="../contact/">contact</a></li>
+            <li><a href="../locations/">locations</a></li>
+            <li><a href="#">contact</a></li>
         </ul>
     </div>
     <div class="btn-order">order now</div>
@@ -29,61 +27,61 @@
         <ul class="mobile-list">
             <li><a href="../index.html">home</a></li>
             <li><a href="../menu/">menu</a></li>
-            <li><a href="#">locations</a></li>
-            <li><a href="../contact/">contact</a></li>
+            <li><a href="../locations/">locations</a></li>
+            <li><a href="#">contact</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- locations -->
+<!-- contact section -->
 
-<section class="locations">
-    <h1 id="loc">locations</h1>
-    <div id="map"></div>
+<section class="section1">
+    <h1>contact</h1>
+</section>
+
+<!-- form -->
+
+<section class="contact">
     <div class="info">
+        <h2>emails us for more info</h2>
+        <p class="info-p">Outdoor area available!</p>
         <div class="address">
-            <h2 class="title">downtown ste 120</h2>
-            <p class="sub">Address</p>
-            <p>10700 Anderson Rd. #120</p>
-            <p>Houston, TX 77056</p>
-            <p class="sub">Phone number</p>
-            <p>(123) 345 - 6677</p>
-            <p class="sub">Hours of Operation</p>
-            <p>Open daily</p>
-            <p>11 am - 10 pm</p>
-            <p class="sub">Services</p>
-            <p>Take-Out</p>
-            <p>3rd-party Delivery</p>
+        <i class="fas fa-directions fa-fw"></i>
+        <a href="../locations/">Houston, Downtown & Galveston</a>
         </div>
         <div class="address">
-            <h2 class="title">Pioneers Park</h2>
-            <p class="sub">Address</p>
-            <p>18105 Pioneers Bear Park</p>
-            <p>Houston, TX 77044</p>
-            <p class="sub">Phone number</p>
-            <p>(123) 345 - 6677</p>
-            <p class="sub">Hours of Operation</p>
-            <p>Open daily</p>
-            <p>11 am - 10 pm</p>
-            <p class="sub">Services</p>
-            <p>Take-Out</p>
-            <p>3rd-party Delivery</p>
+        <i class="fas fa-phone fa-fw"></i>
+        <p>(123) 345 - 6677</p>
         </div>
         <div class="address">
-            <h2 class="title">Galveston Avenue</h2>
-            <p class="sub">Address</p>
-            <p>2557 Galveston Avenue #1</p>
-            <p>Houston, TX 77450</p>
-            <p class="sub">Phone number</p>
-            <p>(123) 345 - 6677</p>
-            <p class="sub">Hours of Operation</p>
-            <p>Open daily</p>
-            <p>11 am - 10 pm</p>
-            <p class="sub">Services</p>
-            <p>Take-Out</p>
-            <p>3rd-party Delivery</p>
+        <i class="far fa-clock fa-fw"></i>
+        <p>11 am - 10 pm</p>
         </div>
-   
+        <div class="address">
+        <i class="far fa-thumbs-up fa-fw"></i>
+        <p>100% of 342 customers recommended</p>
+        </div>
+        <div class="address">
+        <i class="fas fa-shipping-fast"></i>
+        <p>3rd-party Delivery</p>
+        </div>
+    </div>
+    <div class="form">
+        <form>
+            <label for="name">Name and lastname <span>*</span></label>
+            <input type="text" required>
+            <label for="email">Your Email <span>*</span></label>
+            <input type="email" required>
+            <label for="phone">Your phone <span>*</span></label>
+            <input type="tel" required>
+            <label for="subject">Subject <span>*</span></label>
+            <input type="text" required>
+            <label for="message">Write your message <span>*</span></label>
+            <textarea name="message" cols="30" rows="10" required></textarea>
+            <label for="robot" class="robot"><input type="checkbox" class="checkbox" required>I authorize the processing of my personal data</label>
+            
+            <input type="submit" value="send" class="submit">
+        </form>
     </div>
 </section>
 
@@ -132,6 +130,7 @@
 </footer>
 
 <!-- end footer -->
+
 <script src="./scripts/app.js"></script>
 <script src="https://kit.fontawesome.com/bb499b2907.js" crossorigin="anonymous"></script>
 </body>

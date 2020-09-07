@@ -1,27 +1,32 @@
 /* import font */
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Londrina+Solid:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 /* general settings */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #fffded;
 }
+
 ul{
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: #000;
 }
+
 button{
     background: none;
 }
+
 /* navbar settings */
 
 .nav{
@@ -42,6 +47,12 @@ button{
     font-size: 2rem;
     cursor: pointer;
 }
+.icon{
+    margin-right: 0 !important;
+    font-size: 2rem !important;
+    /* left: 30px;
+    bottom: 10px; */
+}
 .mobile-menu{
     display: none;
 }
@@ -57,27 +68,6 @@ button{
     text-decoration: underline;
     transition: .5s ease;
 }
-/* btns settings*/
-.menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-/* .menu::after{
-    content: '';
-    border: 1px solid #000;
-    display: flex;
-    width: 20px;
-    position: absolute;
-} */
-
-.menu h1{
-    font-family: 'Londrina Solid', cursive;
-    font-size: 5rem;
-    text-transform: uppercase;
-}
 .btn-order{
     border: 2px solid #44220e;
     border-radius: 25px;
@@ -91,67 +81,100 @@ button{
     background: #44220e;
     color: #fff;
 }
-.btn{
-    padding: 20px;
-    margin: 5px;
-    border-style: none;
-    position: relative;
-    top: 25px;
-    text-transform: uppercase;
-    font-family: 'Londrina Solid', cursive;
-    cursor: pointer;
-    color: #000;
-    transition: .3s ease;
-    font-size: 1.4rem;
-}
-.btn:hover{
-    box-shadow: 0px 0px 4px 0px #8a8888;
-}
-/* menu settings */
-.categories{
+
+/* contact section */
+
+.section1{
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.category{
-    display: flex;
-    flex-wrap: wrap;
-    width: 40%;
-    position: relative;
-    top: 100px;
+    text-align: center;
 }
 
-.box-item{
-    padding: 0 0 50px 50px;
-}
-.category img{
-    width: 90%;
-    height: 250px;
-    object-fit: cover;
-}
-.title{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2rem;
+.section1 h1{
+    font-family: 'Londrina Solid', cursive;
     text-transform: uppercase;
-    font-weight: bold;
+    font-size: 5rem;
+}
+
+/* contact form */
+
+.contact{
+    align-items: center;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.info h2{
+    text-transform: uppercase;
+    color: #b93939;
+}
+.info-p{
+    padding-bottom: 40px;
+}
+.address{
+    align-items: center;
+    display: flex;
+    padding: 5px 0;
+}
+.fas, .far{
+    margin-right: 10px;
+    font-size: 1.2rem;
     
 }
-.parraf{
-    position: relative;
-    top: 5px;
-    color: #524945;
-    font-family: 'Montserrat', sans-serif;
-    width: 90%;
-    padding-bottom: 10px;
+.form{
+width: 40%;
 }
-.price{
-    font-weight: bold;
-    position: relative;
-    top: 10px;
-    font-family: 'Russo One', sans-serif;
+
+form{
+display: flex;
+flex-direction: column;
+}
+
+label{
+    padding: 10px 0;
+}
+
+span{
+    color: #b93939;
+}
+input{
+    padding: 5px;
+    border: none;
+    box-shadow: inset 0px 0px 2px 0px #adaca5;
+}
+
+textarea{
+    border: none;
+    box-shadow: inset 0px 0px 2px 0px #adaca5; 
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.robot{
+    display: flex;
+    align-items: center;
+}
+.submit{
+    background: #b93939;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 5px;
+    transition: .4s ease;
+}
+
+.submit:hover{
+    background: #000;
 }
 
 /* footer */
@@ -162,7 +185,7 @@ button{
     background-size: cover;
     background-position: center;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .footer-text{
@@ -247,7 +270,7 @@ input{
 /* end footer */
 
 
-/* medias queries */
+/* medias */
 
 @media all and (max-width: 1280px){
     .section{
@@ -272,10 +295,12 @@ input{
         display: initial;
         position: fixed;
         right: 110px;
-        z-index: 3;
+        z-index: 99998;
     }
     .icon{
         transition: .5s ease;
+        position: relative;
+        z-index: 99999;
     }
     .mobile-menu{
     background: darkorange;
@@ -291,7 +316,7 @@ input{
     text-align: center;
     transition: .5s ease;
     width: 0; 
-    z-index: 2;
+    z-index: 9999;
     }
     .mobile-list{
     position: absolute;
@@ -299,27 +324,20 @@ input{
     left: 50%;
     transform: translate(-50%, -50%);
     }
-    .text-title{
-        left: 0;
-        width: max-content;
-        top: 25px;
-        font-size: 3.5rem;
+    .info{
+        padding-bottom: 50px;
     }
-    .text-title p{
-        font-size: 3rem;
-    }
-    button{
-        font-size: 3rem;
-    }
-    .categories{
+    .contact{
         flex-direction: column;
-    }
-    .category{
-        width: 80%;
     }
 }
 
 @media all and (max-width: 880px){
+
+    .form{
+        width: 60%;
+    }
+
     .footer{
         height: 500px;
     }
@@ -330,7 +348,6 @@ input{
 
     .footer-text button{
         padding: 8px;
-        font-size: 1rem;
     }
     .section{
         display: block;
@@ -340,34 +357,36 @@ input{
     }
 }
 
-@media all and (max-width: 540px){
-    .btn{
-        margin: 5px;
-        padding: 10px;
-    }
-}
+@media all and (max-width: 440px){
 
-@media all and (max-width: 500px){
+    .section1 h1{
+        font-size: 3rem;
+    }
+    .info h2{
+        font-size: 1.2rem;
+    }
+
+    .burger-menu{
+    right: 50px;
+    top: 50px;
+    }
+    
+    .form{
+        width: 100%;
+    }
+
     .logo img{
         width: 60px;
         height: 60px;
     }
-    .burger-menu{
-        right: 50px;
-        top: 50px;
-    }
-    .btn{
-        font-size: 1rem;
-    }
-    .menu h1{
-        font-size: 4rem;
-    }
-    .category{
-        width: 100%;
-    }
-}
 
-@media all and (max-width: 440px){
+    .address{
+        font-size: .9rem;
+    }
+
+    .checkbox{
+        width: 25px;
+    }
 
     .footer-text{
         padding: 70px;
@@ -378,12 +397,6 @@ input{
     }
     .signup{
         padding: 10px;
-        font-size: .7rem;
-    }
-}
-
-@media all and (max-width: 360px){
-    .btn{
         font-size: .7rem;
     }
 }
