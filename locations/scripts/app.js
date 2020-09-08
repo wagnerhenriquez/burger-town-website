@@ -33,3 +33,13 @@ showMenu.addEventListener('click', () => {
     } 
 
 })
+
+//quote button
+
+// button
+
+const quote = document.querySelector('.getQuote');
+
+quote.addEventListener('click', () => {
+    window.location = '../contact/'
+})

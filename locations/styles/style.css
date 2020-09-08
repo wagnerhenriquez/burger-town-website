@@ -322,6 +322,10 @@ input{
         font-size: 3rem;
     }
 
+    #map{
+        height: 400px;
+    }
+    
     .footer-text{
         padding: 70px;
     }

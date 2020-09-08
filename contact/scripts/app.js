@@ -16,3 +16,11 @@ showMenu.addEventListener('click', () => {
     }
 
 })
+
+// button
+
+const quote = document.querySelector('.getQuote');
+
+quote.addEventListener('click', () => {
+    window.location = '#'
+})

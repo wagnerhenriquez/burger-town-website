@@ -1,6 +1,7 @@
 const showMenu = document.querySelector('.burger-menu');
 const icon = document.querySelector('.icon');
-const mobileMenu = document.querySelector('.mobile-menu')
+const mobileMenu = document.querySelector('.mobile-menu');
+const btn = document.querySelector('.btn');
 
 
 showMenu.addEventListener('click', () => {
@@ -16,4 +17,6 @@ showMenu.addEventListener('click', () => {
 
 })
 
-
+btn.addEventListener('click', () => {
+    window.location = './menu/'
+})
